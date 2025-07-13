@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ماونتن فيو</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="ico.png" />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-P56FNBPF");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./logo.png" alt="لوكس العقارية" />
+      </div>
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="tel:201503622325" title="اتصل بنا">
+            <i class="fas fa-phone"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://wa.me/201503622325" target="_blank" title="واتساب">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </li>
+        <li><a href="#contact">اتصل بنا</a></li>
+        <li><a href="#projects">المشاريع</a></li>
+        <li><a href="#about">من نحن</a></li>
+        <li><a href="#home">الرئيسية</a></li>
+      </ul>
+    </nav>
+
+    <!-- Video Header -->
+    <header class="video-header" id="home">
+      <video autoplay muted loop id="myVideo">
+        <source
+          src="https://mountainviewegypt.com/videos/newHomePage.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div class="header-content">
+        <h1>اكتشف منزل أحلامك</h1>
+        <p>في واحد من مشاريع ماونتن فيو</p>
+        <a href="#projects" class="cta-button">استكشف المشاريع</a>
+      </div>
+    </header>
+    <!-- About Company Section -->
+    <section class="about-company" id="about">
+      <div class="about-container">
+        <div class="about-image">
+          <img src="./0.jpeg" alt="شركتنا" />
+        </div>
+        <div class="about-content">
+          <h2>من نحن</h2>
+          <p>
+            تخلق ماونتن فيو مجتمعات غامرة قائمة على الخبرة تركز على إثراء الحياة
+            وتعزيز السعادة الحقيقية. من خلال بناء مساحات نابضة بالحياة وجذابة
+            توفر للعائلات مكانا للازدهار ، نتأكد من أن كل جانب من جوانب وجهاتنا
+            يساهم في رفاهيتهم وسعادتهم بشكل عام
+          </p>
+          <ul class="company-features">
+            <li><i class="fas fa-check"></i> MV Clubs</li>
+            <li><i class="fas fa-check"></i> The Lighthouse</li>
+            <li><i class="fas fa-check"></i> Science of Happiness</li>
+            <li><i class="fas fa-check"></i>Goodness</li>
+          </ul>
+          <a href="#contact" class="about-cta">سجل ألان</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recent Projects Section -->
+    <section class="projects" id="projects">
+      <h2>المشاريع المميزة</h2>
+      <div class="project-grid">
+        <div class="project-card" onclick="scrollToProject('grayan-details')">
+          <img src="./1.jpeg" alt="كمبوند جريان واحد" />
+          <div class="project-info">
+            <h3>كمبوند جريان واحد</h3>
+            <p>تحالف ماونتن فيو وبالم هيلز</p>
+            <a
+              href="#grayan-details"
+              class="project-link"
+              onclick="event.preventDefault(); scrollToProject('grayan-details')"
+              >عرض التفاصيل</a
+            >
+          </div>
+        </div>
+        <div class="project-card" onclick="scrollToProject('crysta-details')">
+          <img src="./2.jpeg" alt="كريستا سيدي عبدالرحمن بالساحل الشمالي" />
+          <div class="project-info">
+            <h3>كريستا سيدي عبدالرحمن بالساحل الشمالي</h3>
+            <p>ماونتن فيو</p>
+            <a
+              href="#crysta-details"
+              class="project-link"
+              onclick="event.preventDefault(); scrollToProject('crysta-details')"
+              >عرض التفاصيل</a
+            >
+          </div>
+        </div>
+        <div class="project-card" onclick="scrollToProject('eliva-details')">
+          <img src="./3.jpg" alt="كمبوند اليفا ماونتن فيو المستقبل" />
+          <div class="project-info">
+            <h3>كمبوند اليفا ماونتن فيو المستقبل</h3>
+            <p>ماونتن فيو</p>
+            <a
+              href="#eliva-details"
+              class="project-link"
+              onclick="event.preventDefault(); scrollToProject('eliva-details')"
+              >عرض التفاصيل</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detailed Project Sections -->
+    <section class="project-details" id="grayan-details">
+      <div class="project-detail-container">
+        <div class="project-image">
+          <img src="./1.jpeg" alt="كمبوند جريان واحد" />
+        </div>
+        <div class="project-content">
+          <h2>كمبوند جريان واحد</h2>
+          <p class="price">تحالف ماونتن فيو وبالم هيلز</p>
+          <div class="description">
+            <h3>الوصف</h3>
+            <p>
+              في قلب الشيخ زايد وعلى نهر النيل مباشرة، يأتي مشروع كمبوند جريان
+              واحد من افضل المشروعات العقارية في مصر بتحالف فريد بين ماونتن فيو
+              وبالم هيلز. يتواجد في موقع استراتيجي في محور الشيخ زايد بمدينة
+              السادس من أكتوبر، بالقرب من مطار سفنكس، المتحف المصري الجديد،
+              الطريق الدائري الأوسطي، ومول العرب.
+            </p>
+            <p>
+              مشروع جريان الشيخ زايد يقدم وحدات سكنية متنوعة تشمل شقق فاخرة
+              وتاون هاوس وتوين هاوس وفلل مستقلة بتصميمات عصرية، وسط مساحات خضراء
+              على النيل ليمنح إطلالات مفتوحة وخصوصية عالية. فقد تم تصميم كمبوند
+              جريان ماونتن فيو لتحقيق أعلى درجات الخصوصية والهدوء.
+            </p>
+            <p>
+              يقدم كمبوند جريان ماونتن فيو تجربة معيشية متكاملة، حيث يضم مجموعة
+              من المرافق والخدمات الحيوية مثل المطاعم، المولات التجارية، الصالات
+              الرياضية، المدارس، العيادات الطبية، ومناطق مخصصة لألعاب الأطفال.
+              كما يتمتع بأعلى معايير الأمان على مدار الساعة، إلى جانب أنظمة
+              المنازل الذكية، مولدات كهرباء، ومخارج طوارئ مصممة وفقاً للمعايير
+              العالمية.
+            </p>
+            <p>
+              امتلك وحدتك بمقدم 5% فقط وتقسيط حتى 8 سنوات في كمبوند جريان،
+              ولمعرفة المزيد من التفاصيل عن المشروع سجل بياناتك الآن
+            </p>
+          </div>
+          <a href="#contact" class="cta-button">سجل ألان</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-details" id="crysta-details">
+      <div class="project-detail-container">
+        <div class="project-content r-p">
+          <h2>كريستا سيدي عبدالرحمن بالساحل الشمالي</h2>
+          <p class="price">ماونتن فيو</p>
+          <div class="description">
+            <h3>الوصف</h3>
+            <p>
+              كريستا سيدي عبدالرحمن بالساحل الشمالي هو أحدث مشروعات ماونتن فيو،
+              بمفهوم مبتكر لحياة الصيف بين الطبيعة، الهدوء، والتصميم العصري.
+              يمتد مشروع كريستا سيدي عبد الرحمن على مساحة 470 فدان، تُخصص 85%
+              منها للمساحات الخضراء والـLagoon الطبيعية، مع واجهات مائية بطول 15
+              كم وشاطئ رملي يمتد لـ1 كم، ليحظى 90% من الوحدات بإطلالة مباشرة على
+              المياه. كما يضم المشروع 35 فدان من البحيرات الصناعية وCrystal
+              Lagoons، و3 فنادق بوتيك بخدمات فندقية فاخرة، إلى جانب كلوب هاوس،
+              مطاعم وكافيهات عالمية، منطقة تجارية متكاملة (Crysta Town)، وممشى
+              ساحلي مميز (Crysta Walk) على مساحة 85 فدان، لتعيش تجربة سكنية
+              راقية في قلب الطبيعة.
+            </p>
+            <p>
+              تبدأ مساحة الوحدات في المشروع من 45 متر مربع، وتنوعت الوحدات
+              السكنية الساحلية داخل المشروع مثل كبائن وبيت شاطئي وروف شاطئي وفلل
+              مستقلة وكريستا فيلا وجراند فيلا.
+            </p>
+            <p>
+              احجز وحدتك الآن بمقدم 5% وقسط يصل الي 8 سنوات واستمتع بصيف مميز مع
+              ماونتن فيو
+            </p>
+          </div>
+          <a href="#contact" class="cta-button">سجل ألان</a>
+        </div>
+        <div class="project-image">
+          <img src="./2.jpeg" alt="كريستا سيدي عبدالرحمن بالساحل الشمالي" />
+        </div>
+      </div>
+    </section>
+
+    <section class="project-details" id="eliva-details">
+      <div class="project-detail-container">
+        <div class="project-image">
+          <img src="./3.jpg" alt="كمبوند اليفا ماونتن فيو المستقبل" />
+        </div>
+        <div class="project-content">
+          <h2>كمبوند اليفا ماونتن فيو المستقبل</h2>
+          <p class="price">ماونتن فيو</p>
+          <div class="description">
+            <h3>الوصف</h3>
+            <p>
+              كمبوند اليفا ماونتن فيو المستقبل هو مشروع سكني متكامل بتصميم المدن
+              الذكية على طراز معماري مميز يقع في مدينة المستقبل سيتي بالقاهرة
+              الجديدة، بالقرب من ماونتن فيو سيتي وعلى بعد 5 دقائق من طريق السويس
+              ومدينتي حيث يمتد على مساحة 670 فدانًا.
+            </p>
+            <p>
+              يضم مشروع ماونتن فيو مستقبل سيتي وحدات سكنية متنوعة بمساحات وأسعار
+              مختلفة حيث يتواجد شقق وآي فيلا وتوين هاوس وفلل مستقلة.
+            </p>
+            <p>
+              احجز وحدتك بمقدم 10% واستلم في خلال 4 سنوات بأقساط تصل الي 9 سنوات
+              ولمزيد من التفاصيل سجل بياناتك معانا الآن.
+            </p>
+          </div>
+          <a href="#contact" class="cta-button">سجل ألان</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact" id="contact">
+      <div class="contact-container">
+        <h2>تواصل معنا</h2>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" name="name" required />
+            <label for="name">الاسم الكامل</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" required />
+            <label for="email">البريد الإلكتروني</label>
+          </div>
+          <div class="form-group">
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              minlength="11"
+              required
+              pattern="[0-9+]*"
+              oninput="this.value = this.value.replace(/[^0-9+]/g, '')"
+            />
+            <label for="phone">رقم الهاتف</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" required></textarea>
+            <label for="message">رسالتك</label>
+          </div>
+          <button type="submit" class="submit-btn">إرسال الرسالة</button>
+          <div
+            id="formMessage"
+            style="margin-top: 1rem; font-weight: bold"
+          ></div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <img src="./logo.png" alt="لوغو ماونتن فيو" class="footer-logo" />
+          <p class="footer-about">
+            تخلق ماونتن فيو مجتمعات غامرة قائمة على الخبرة تركز على إثراء الحياة
+            وتعزيز السعادة الحقيقية. من خلال بناء مساحات نابضة بالحياة وجذابة
+            توفر للعائلات مكانا للازدهار ، نتأكد من أن كل جانب من جوانب وجهاتنا
+            يساهم في رفاهيتهم وسعادتهم بشكل عام
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>معلومات الاتصال</h3>
+          <p dir="ltr">
+            <a
+              href="tel:201503622325"
+              title="اتصل بنا"
+              style="color: white; text-decoration: none"
+              >+201503622325 <i class="fas fa-phone"></i
+            ></a>
+          </p>
+          <p dir="ltr">
+            <a
+              href="https://wa.me/201503622325"
+              target="_blank"
+              style="color: white; text-decoration: none"
+            >
+              +201503622325 <i class="fab fa-whatsapp"></i>
+            </a>
+          </p>
+          <p dir="ltr">
+            <a
+              href="https://www.facebook.com/madinetmasr.dev/"
+              target="_blank"
+              style="color: white; text-decoration: none"
+            >
+              Facebook <i class="fab fa-facebook"></i
+            ></a>
+          </p>
+          <p dir="ltr">
+            <a
+              href="https://www.instagram.com/madinetmasr.dev"
+              target="_blank"
+              style="color: white; text-decoration: none"
+            >
+              Instagram <i class="fab fa-instagram"></i
+            ></a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 ماونتن فيو. جميع الحقوق محفوظة.</p>
+      </div>
+    </footer>
+    <!-- Social Media Buttons -->
+    <div class="social-media-buttons">
+      <a
+        href="https://www.facebook.com/madinetmasr.dev/"
+        target="_blank"
+        class="social-btn facebook"
+      >
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a
+        href="https://www.instagram.com/madinetmasr.dev"
+        target="_blank"
+        class="social-btn instagram"
+      >
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a
+        href="#contact"
+        class="social-btn contact"
+        onclick="scrollToContact(event)"
+      >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-P56FNBPF"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <script>
+      // Navbar scroll effect
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        const logoImg = document.querySelector(".logo img");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+          if (logoImg) logoImg.src = "logo-dark.png";
+        } else {
+          navbar.classList.remove("scrolled");
+          if (logoImg) logoImg.src = "logo.png";
+        }
+      });
+
+      // Function to scroll to contact section
+      function scrollToContact(event) {
+        event.preventDefault();
+        const contactSection = document.getElementById("contact");
+        const navbarHeight = document.querySelector(".navbar").offsetHeight;
+        const contactPosition = contactSection.offsetTop - navbarHeight;
+
+        window.scrollTo({
+          top: contactPosition,
+          behavior: "smooth",
+        });
+      }
+
+      // Mobile menu toggle
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.getElementById("menuToggle");
+        const navLinks = document.querySelector(".nav-links");
+        const navItems = document.querySelectorAll(".nav-links a");
+
+        if (menuToggle) {
+          menuToggle.addEventListener("click", function (e) {
+            e.stopPropagation();
+            this.classList.toggle("active");
+            navLinks.classList.toggle("active");
+            const logoImg = document.querySelector(".logo img");
+            if (navLinks.classList.contains("active")) {
+              if (logoImg) logoImg.src = "logo-dark.png";
+            } else {
+              // Restore logo based on scroll position
+              if (logoImg)
+                logoImg.src =
+                  window.scrollY > 50 ? "logo-dark.png" : "logo.png";
+            }
+          });
+        }
+
+        // Close menu when clicking a link
+        navItems.forEach((item) => {
+          item.addEventListener("click", function () {
+            menuToggle.classList.remove("active");
+            navLinks.classList.remove("active");
+            const logoImg = document.querySelector(".logo img");
+            if (logoImg)
+              logoImg.src = window.scrollY > 50 ? "logo-dark.png" : "logo.png";
+          });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener("click", function (e) {
+          if (
+            navLinks.classList.contains("active") &&
+            !navLinks.contains(e.target) &&
+            !menuToggle.contains(e.target)
+          ) {
+            menuToggle.classList.remove("active");
+            navLinks.classList.remove("active");
+            const logoImg = document.querySelector(".logo img");
+            if (logoImg)
+              logoImg.src = window.scrollY > 50 ? "logo-dark.png" : "logo.png";
+          }
+        });
+
+        // Prevent clicks inside menu from closing it
+        navLinks.addEventListener("click", function (e) {
+          e.stopPropagation();
+        });
+      });
+
+      // Smooth scroll to project details
+      function scrollToProject(projectId) {
+        const projectSection = document.getElementById(projectId);
+        const navbarHeight = document.querySelector(".navbar").offsetHeight;
+        const projectPosition = projectSection.offsetTop - navbarHeight;
+
+        window.scrollTo({
+          top: projectPosition,
+          behavior: "smooth",
+        });
+      }
+
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          var form = e.target;
+          var formData = new FormData(form);
+          var messageDiv = document.getElementById("formMessage");
+
+          // Get values and trim spaces
+          var name = form.name.value.trim();
+          var email = form.email.value.trim();
+          var phone = form.phone.value.trim();
+          var message = form.message.value.trim();
+
+          // Validate all fields
+          if (!name) {
+            messageDiv.textContent = "الاسم مطلوب.";
+            return;
+          }
+          if (!email) {
+            messageDiv.textContent = "البريد الإلكتروني مطلوب.";
+            return;
+          }
+          if (!phone) {
+            messageDiv.textContent = "رقم الهاتف مطلوب.";
+            return;
+          }
+          if (phone.length < 11) {
+            messageDiv.textContent =
+              "رقم الهاتف يجب أن يكون 11 رقمًا على الأقل.";
+            return;
+          }
+          if (!message) {
+            messageDiv.textContent = "الرسالة مطلوبة.";
+            return;
+          }
+
+          messageDiv.textContent = "...جاري الإرسال";
+
+          fetch("sendmail.php", {
+            method: "POST",
+            body: formData,
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              if (data.status === "success") {
+                window.location.href = "thanks.html";
+              } else {
+                messageDiv.textContent = data.message;
+              }
+            })
+            .catch((error) => {
+              messageDiv.textContent =
+                "حدث خطأ أثناء إرسال الرسالة. حاول مرة أخرى.";
+            });
+        });
+    </script>
+  </body>
+</html>
