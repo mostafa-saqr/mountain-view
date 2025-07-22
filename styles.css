@@ -706,6 +706,7 @@ footer {
   line-height: 1.8;
   color: #666;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .company-features {
@@ -876,4 +877,75 @@ footer {
 /* Also ensure nav-links.active uses white background for clarity */
 .nav-links.active {
   background: #fff !important;
+}
+
+/* Slick Slider Custom Arrows */
+.slick-arrow {
+  z-index: 10;
+  width: 48px !important;
+  height: 48px !important;
+  background: none !important;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  top: 40% !important;
+  transform: translateY(-50%) !important;
+  color: #003cb3 !important;
+  border: none;
+  opacity: 1 !important;
+}
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  position: absolute;
+}
+.slick-prev {
+  left: 16px;
+  right: auto;
+}
+.slick-next {
+  right: 16px;
+  left: auto;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-size: 60px !important;
+  color: #fff !important;
+  opacity: 0.8 !important;
+  font-family: "slick";
+}
+.slick-prev:before {
+  content: "\2190"; /* ← */
+}
+.slick-next:before {
+  content: "\2192"; /* → */
+}
+@media (max-width: 768px) {
+  .slick-arrow {
+    width: 36px;
+    height: 36px;
+  }
+  .slick-prev,
+  .slick-next {
+    top: 45%;
+  }
+}
+
+[dir="rtl"] .slick-next {
+  right: auto !important;
+  left: 6% !important;
+}
+[dir="rtl"] .slick-prev {
+  left: auto !important;
+  right: 6% !important;
+}
+
+.project-slick .slick-slide {
+  margin: 0 12px;
+}
+.project-slick {
+  margin-left: -12px;
+  margin-right: -12px;
 }
