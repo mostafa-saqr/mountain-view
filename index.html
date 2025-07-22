@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ماونتن فيو</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="ico.png" />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-P56FNBPF");
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Slick Slider CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./logo.png" alt="لوكس العقارية" />
+      </div>
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="tel:201503622325" title="اتصل بنا">
+            <i class="fas fa-phone"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://wa.me/201503622325" target="_blank" title="واتساب">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </li>
+        <li><a href="#contact">اتصل بنا</a></li>
+        <li><a href="#projects">المشاريع</a></li>
+        <li><a href="#about">من نحن</a></li>
+        <li><a href="#home">الرئيسية</a></li>
+      </ul>
+    </nav>
+
+    <!-- Video Header -->
+    <header class="video-header" id="home">
+      <video autoplay muted loop id="myVideo">
+        <source
+          src="https://mountainviewegypt.com/videos/newHomePage.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div class="header-content">
+        <h1>اكتشف منزل أحلامك</h1>
+        <p>في واحد من مشاريع ماونتن فيو</p>
+        <a href="#projects" class="cta-button">استكشف المشاريع</a>
+      </div>
+    </header>
+    <!-- About Company Section -->
+    <section class="about-company" id="about">
+      <div
+        class="about-container"
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100vw;
+        "
+      >
+        <div
+          class="about-content"
+          style="
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+          "
+        >
+          <h2 style="margin: 0; padding: 2rem 0 1rem 0; text-align: center">
+            نبذة عن شركة ماونتن فيو للتطوير العقاري
+          </h2>
+          <p class="about-content">
+            شركة ماونتن فيو من الشركات الرائدة في مجال التطوير العقاري في مصر
+            وقد تأسست في عام ٢٠٠٥ وتتبع مجموعة دار المعمار. ويعمل في الشركة اكثر
+            من 1000 مسؤول ومهندس، تشتهر الشركة بكثرة مشروعاتها المصممة بمعايير
+            جودة عالمية في مواقع استراتيجية مثل العاصمة الإدارية، القاهرة
+            الجديدة، 6 أكتوبر، الساحل الشمالي، العين السخنة.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recent Projects Section -->
+    <section class="projects" id="projects" style="padding: 0; margin: 0">
+      <div class="project-slick">
+        <div>
+          <img
+            src="./1.jpeg"
+            alt="كمبوند جريان واحد"
+            style="
+              width: 100%;
+              height: 400px;
+              object-fit: cover;
+              display: block;
+            "
+          />
+          <div
+            class="project-info-static"
+            style="padding: 2rem; text-align: center"
+          >
+            <h3 style="color: #003cb3; font-size: 1.2rem; margin-bottom: 1rem">
+              كمبوند جريان الشيخ زايد
+            </h3>
+            <a
+              href="#grayan-details"
+              class="project-link"
+              style="color: #5d5d5d; text-decoration: none"
+              >عرض التفاصيل</a
+            >
+          </div>
+        </div>
+        <div>
+          <img
+            src="./2.jpeg"
+            alt="كريستا سيدي عبدالرحمن بالساحل الشمالي"
+            style="
+              width: 100%;
+              height: 400px;
+              object-fit: cover;
+              display: block;
+            "
+          />
+          <div
+            class="project-info-static"
+            style="padding: 2rem; text-align: center"
+          >
+            <h3 style="color: #003cb3; font-size: 1.2rem; margin-bottom: 1rem">
+              كريستا سيدي عبدالرحمن بالساحل الشمالي
+            </h3>
+            <a
+              href="#crysta-details"
+              class="project-link"
+              style="color: #5d5d5d; text-decoration: none"
+              >عرض التفاصيل</a
+            >
+          </div>
+        </div>
+        <div>
+          <img
+            src="./3.jpg"
+            alt="كمبوند اليفا ماونتن فيو المستقبل"
+            style="
+              width: 100%;
+              height: 400px;
+              object-fit: cover;
+              display: block;
+            "
+          />
+          <div
+            class="project-info-static"
+            style="padding: 2rem; text-align: center"
+          >
+            <h3 style="color: #003cb3; font-size: 1.2rem; margin-bottom: 1rem">
+              كمبوند اليفا ماونتن فيو المستقبل
+            </h3>
+            <a
+              href="#eliva-details"
+              class="project-link"
+              style="color: #5d5d5d; text-decoration: none"
+              >عرض التفاصيل</a
+            >
+          </div>
+        </div>
+
+        <div>
+          <img
+            src="./4.jpeg"
+            alt="بلاج من ماونتن فيو سيدي عبد الرحمن الساحل الشمالي"
+            style="
+              width: 100%;
+              height: 400px;
+              object-fit: cover;
+              display: block;
+            "
+          />
+          <div
+            class="project-info-static"
+            style="padding: 2rem; text-align: center"
+          >
+            <h3 style="color: #003cb3; font-size: 1.2rem; margin-bottom: 1rem">
+              بلاج من ماونتن فيو سيدي عبد الرحمن
+            </h3>
+            <a
+              href="#plage-details"
+              class="project-link"
+              style="color: #5d5d5d; text-decoration: none"
+              >عرض التفاصيل</a
+            >
+          </div>
+        </div>
+        <div>
+          <img
+            src="./5.jpeg"
+            alt="آي سيتي ماونتن فيو أكتوبر"
+            style="
+              width: 100%;
+              height: 400px;
+              object-fit: cover;
+              display: block;
+            "
+          />
+          <div
+            class="project-info-static"
+            style="padding: 2rem; text-align: center"
+          >
+            <h3 style="color: #003cb3; font-size: 1.2rem; margin-bottom: 1rem">
+              آي سيتي ماونتن فيو أكتوبر
+            </h3>
+            <a
+              href="#icity-details"
+              class="project-link"
+              style="color: #5d5d5d; text-decoration: none"
+              >عرض التفاصيل</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detailed Project Sections -->
+    <section class="project-details" id="grayan-details">
+      <div class="project-detail-container">
+        <div class="project-image">
+          <img src="./1.jpeg" alt="كمبوند جريان واحد" />
+        </div>
+        <div class="project-content">
+          <h2>كمبوند جريان الشيخ زايد</h2>
+
+          <div class="description">
+            <h3>الوصف</h3>
+            <p>
+              في قلب الشيخ زايد وعلى نهر النيل مباشرة، يأتي مشروع كمبوند جريان
+              واحد من افضل المشروعات العقارية في مصر بتحالف فريد بين ماونتن فيو
+              وبالم هيلز. يتواجد في موقع استراتيجي في محور الشيخ زايد بمدينة
+              السادس من أكتوبر، بالقرب من مطار سفنكس، المتحف المصري الجديد،
+              الطريق الدائري الأوسطي، ومول العرب.
+            </p>
+            <p>
+              مشروع جريان الشيخ زايد يقدم وحدات سكنية متنوعة تشمل شقق فاخرة
+              وتاون هاوس وتوين هاوس وفلل مستقلة بتصميمات عصرية، وسط مساحات خضراء
+              على النيل ليمنح إطلالات مفتوحة وخصوصية عالية. فقد تم تصميم كمبوند
+              جريان ماونتن فيو لتحقيق أعلى درجات الخصوصية والهدوء.
+            </p>
+            <p>
+              يقدم كمبوند جريان ماونتن فيو تجربة معيشية متكاملة، حيث يضم مجموعة
+              من المرافق والخدمات الحيوية مثل المطاعم، المولات التجارية، الصالات
+              الرياضية، المدارس، العيادات الطبية، ومناطق مخصصة لألعاب الأطفال.
+              كما يتمتع بأعلى معايير الأمان على مدار الساعة، إلى جانب أنظمة
+              المنازل الذكية، مولدات كهرباء، ومخارج طوارئ مصممة وفقاً للمعايير
+              العالمية.
+            </p>
+            <p>
+              امتلك وحدتك بمقدم 5% فقط وتقسيط حتى 8 سنوات في كمبوند جريان،
+              ولمعرفة المزيد من التفاصيل عن المشروع سجل بياناتك الآن
+            </p>
+          </div>
+          <a href="#contact" class="cta-button">سجل ألان</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-details" id="crysta-details">
+      <div class="project-detail-container">
+        <div class="project-content r-p">
+          <h2>كريستا سيدي عبدالرحمن بالساحل الشمالي</h2>
+          <p class="price">ماونتن فيو</p>
+          <div class="description">
+            <h3>الوصف</h3>
+            <p>
+              كريستا سيدي عبدالرحمن بالساحل الشمالي هو أحدث مشروعات ماونتن فيو،
+              بمفهوم مبتكر لحياة الصيف بين الطبيعة، الهدوء، والتصميم العصري.
+              يمتد مشروع كريستا سيدي عبد الرحمن على مساحة 470 فدان، تُخصص 85%
+              منها للمساحات الخضراء والـLagoon الطبيعية، مع واجهات مائية بطول 15
+              كم وشاطئ رملي يمتد لـ1 كم، ليحظى 90% من الوحدات بإطلالة مباشرة على
+              المياه. كما يضم المشروع 35 فدان من البحيرات الصناعية وCrystal
+              Lagoons، و3 فنادق بوتيك بخدمات فندقية فاخرة، إلى جانب كلوب هاوس،
+              مطاعم وكافيهات عالمية، منطقة تجارية متكاملة (Crysta Town)، وممشى
+              ساحلي مميز (Crysta Walk) على مساحة 85 فدان، لتعيش تجربة سكنية
+              راقية في قلب الطبيعة.
+            </p>
+            <p>
+              تبدأ مساحة الوحدات في المشروع من 45 متر مربع، وتنوعت الوحدات
+              السكنية الساحلية داخل المشروع مثل كبائن وبيت شاطئي وروف شاطئي وفلل
+              مستقلة وكريستا فيلا وجراند فيلا.
+            </p>
+            <p>
+              احجز وحدتك الآن بمقدم 5% وقسط يصل الي 8 سنوات واستمتع بصيف مميز مع
+              ماونتن فيو
+            </p>
+          </div>
+          <a href="#contact" class="cta-button">سجل ألان</a>
+        </div>
+        <div class="project-image">
+          <img src="./2.jpeg" alt="كريستا سيدي عبدالرحمن بالساحل الشمالي" />
+        </div>
+      </div>
+    </section>
+
+    <section class="project-details" id="eliva-details">
+      <div class="project-detail-container">
+        <div class="project-image">
+          <img src="./3.jpg" alt="كمبوند اليفا ماونتن فيو المستقبل" />
+        </div>
+        <div class="project-content">
+          <h2>كمبوند اليفا ماونتن فيو المستقبل</h2>
+          <p class="price">ماونتن فيو</p>
+          <div class="description">
+            <h3>الوصف</h3>
+            <p>
+              كمبوند اليفا ماونتن فيو المستقبل هو مشروع سكني متكامل بتصميم المدن
+              الذكية على طراز معماري مميز يقع في مدينة المستقبل سيتي بالقاهرة
+              الجديدة، بالقرب من ماونتن فيو سيتي وعلى بعد 5 دقائق من طريق السويس
+              ومدينتي حيث يمتد على مساحة 670 فدانًا.
+            </p>
+            <p>
+              يضم مشروع ماونتن فيو مستقبل سيتي وحدات سكنية متنوعة بمساحات وأسعار
+              مختلفة حيث يتواجد شقق وآي فيلا وتوين هاوس وفلل مستقلة.
+            </p>
+            <p>
+              احجز وحدتك بمقدم 10% واستلم في خلال 4 سنوات بأقساط تصل الي 9 سنوات
+              ولمزيد من التفاصيل سجل بياناتك معانا الآن.
+            </p>
+          </div>
+          <a href="#contact" class="cta-button">سجل ألان</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-details" id="plage-details">
+      <div class="project-detail-container">
+        <div class="project-content">
+          <h2>بلاج من ماونتن فيو سيدي عبد الرحمن الساحل الشمالي</h2>
+          <p class="price">ماونتن فيو</p>
+          <div class="description">
+            <h3>الوصف</h3>
+            <p>
+              يتواجد مشروع بلاج ماونت فيو على أجمل شواطئ الساحل الشمالي بمنطقة
+              سيدي عبد الرحمن بالقرب من هاسيندا ولازوردي مما يجعله وجهة مثالية
+              لقضاء الصيف أو للاستثمار، يتميز المشروع بتصميمات مستوحاة من الطراز
+              اليوناني، وشاطئ رملي خاص، وحمامات سباحة متعددة، بالإضافة إلى خدمات
+              فندقية ومناطق ترفيهية متكاملة للعائلات.
+            </p>
+            <p>
+              يقدم بلاج من ماونتن فيو وحدات متنوعة تشمل شاليهات، تاون هاوس،
+              وفيلات بمساحات مختلفة لتناسب جميع الاحتياجات، مع أنظمة سداد مرنة
+              تبدأ بمقدم بسيط وتقسيط يصل حتى 8 سنوات بدون فوائد، لتضمن لك تملك
+              وحدة مصيفية بأقل التكاليف وبأعلى قيمة استثمارية.
+            </p>
+            <p>
+              احجز وحدتك الآن واستمتع بصيف لا يُنسى على أجمل شواطئ الساحل
+              الشمالي.
+            </p>
+          </div>
+          <a href="#contact" class="cta-button">سجل ألان</a>
+        </div>
+        <div class="project-image">
+          <img
+            src="./4.jpeg"
+            alt="بلاج من ماونتن فيو سيدي عبد الرحمن الساحل الشمالي"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="project-details" id="icity-details">
+      <div class="project-detail-container">
+        <div class="project-image">
+          <img src="./5.jpeg" alt="آي سيتي ماونتن فيو أكتوبر" />
+        </div>
+        <div class="project-content">
+          <h2>آي سيتي ماونتن فيو أكتوبر</h2>
+          <p class="price">ماونتن فيو</p>
+          <div class="description">
+            <h3>الوصف</h3>
+            <p>
+              يقع مشروع آي سيتي ماونتن فيو أكتوبر في موقع استراتيجي مميز بمدينة
+              6 أكتوبر، على بُعد دقائق من محور 26 يوليو وطريق الواحات، وبالقرب
+              من مول العرب وجامعة MSA، مما يجعله قريبًا من أهم المعالم والخدمات
+              الحيوية في غرب القاهرة.
+            </p>
+            <p>
+              يتميز المشروع بتصميم مبتكر قائم على مفهوم الـ "iCity"، والذي يوفر
+              لك مدينة متكاملة داخل كمبوند، مع تقسيمه لمناطق ذكية ومستقلة مثل
+              iVilla وLagoon Park، بالإضافة إلى مساحات خضراء واسعة، بحيرات
+              صناعية، نادي رياضي واجتماعي، وممشى ترفيهي، مما يضمن لك ولأسرتك
+              أسلوب حياة مريح وآمن.
+            </p>
+            <p>
+              يوفر المشروع وحدات متنوعة تشمل شقق، آي فيلا، تاون هاوس، وتوين هاوس
+              بمساحات متعددة تناسب مختلف الاحتياجات، مع أنظمة سداد مرنة تبدأ
+              بمقدم بسيط وتقسيط حتى 9 سنوات بدون فوائد، لتملك وحدتك في واحدة من
+              أفضل مجتمعات أكتوبر السكنية.
+            </p>
+            <p>
+              احجز الآن في iCity October واستمتع بحياة عصرية متكاملة في قلب
+              أكتوبر.
+            </p>
+          </div>
+          <a href="#contact" class="cta-button">سجل ألان</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact" id="contact">
+      <div class="contact-container">
+        <h2>تواصل معنا</h2>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" name="name" required />
+            <label for="name">الاسم الكامل</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" required />
+            <label for="email">البريد الإلكتروني</label>
+          </div>
+          <div class="form-group">
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              minlength="11"
+              required
+              pattern="[0-9+]*"
+              oninput="this.value = this.value.replace(/[^0-9+]/g, '')"
+            />
+            <label for="phone">رقم الهاتف</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" required></textarea>
+            <label for="message">رسالتك</label>
+          </div>
+          <button type="submit" class="submit-btn">إرسال الرسالة</button>
+          <div
+            id="formMessage"
+            style="margin-top: 1rem; font-weight: bold"
+          ></div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <img src="./logo.png" alt="لوغو ماونتن فيو" class="footer-logo" />
+          <p class="footer-about">
+            تخلق ماونتن فيو مجتمعات غامرة قائمة على الخبرة تركز على إثراء الحياة
+            وتعزيز السعادة الحقيقية. من خلال بناء مساحات نابضة بالحياة وجذابة
+            توفر للعائلات مكانا للازدهار ، نتأكد من أن كل جانب من جوانب وجهاتنا
+            يساهم في رفاهيتهم وسعادتهم بشكل عام
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>معلومات الاتصال</h3>
+          <p dir="ltr">
+            <a
+              href="tel:201503622325"
+              title="اتصل بنا"
+              style="color: white; text-decoration: none"
+              >+201503622325 <i class="fas fa-phone"></i
+            ></a>
+          </p>
+          <p dir="ltr">
+            <a
+              href="https://wa.me/201503622325"
+              target="_blank"
+              style="color: white; text-decoration: none"
+            >
+              +201503622325 <i class="fab fa-whatsapp"></i>
+            </a>
+          </p>
+          <p dir="ltr">
+            <a
+              href="https://www.facebook.com/madinetmasr.dev/"
+              target="_blank"
+              style="color: white; text-decoration: none"
+            >
+              Facebook <i class="fab fa-facebook"></i
+            ></a>
+          </p>
+          <p dir="ltr">
+            <a
+              href="https://www.instagram.com/madinetmasr.dev"
+              target="_blank"
+              style="color: white; text-decoration: none"
+            >
+              Instagram <i class="fab fa-instagram"></i
+            ></a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 ماونتن فيو. جميع الحقوق محفوظة.</p>
+      </div>
+    </footer>
+    <!-- Social Media Buttons -->
+    <div class="social-media-buttons">
+      <a
+        href="https://www.facebook.com/madinetmasr.dev/"
+        target="_blank"
+        class="social-btn facebook"
+      >
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a
+        href="https://www.instagram.com/madinetmasr.dev"
+        target="_blank"
+        class="social-btn instagram"
+      >
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a
+        href="#contact"
+        class="social-btn contact"
+        onclick="scrollToContact(event)"
+      >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-P56FNBPF"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        rtl: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+          },
+          1200: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+    <!-- jQuery (required for Slick) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick Slider JS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".project-slick").slick({
+          rtl: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          arrows: true,
+          dots: false,
+          infinite: true,
+
+          responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 2,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+    <script>
+      // Navbar scroll effect
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        const logoImg = document.querySelector(".logo img");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+          if (logoImg) logoImg.src = "logo-dark.png";
+        } else {
+          navbar.classList.remove("scrolled");
+          if (logoImg) logoImg.src = "logo.png";
+        }
+      });
+
+      // Function to scroll to contact section
+      function scrollToContact(event) {
+        event.preventDefault();
+        const contactSection = document.getElementById("contact");
+        const navbarHeight = document.querySelector(".navbar").offsetHeight;
+        const contactPosition = contactSection.offsetTop - navbarHeight;
+
+        window.scrollTo({
+          top: contactPosition,
+          behavior: "smooth",
+        });
+      }
+
+      // Mobile menu toggle
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.getElementById("menuToggle");
+        const navLinks = document.querySelector(".nav-links");
+        const navItems = document.querySelectorAll(".nav-links a");
+
+        if (menuToggle) {
+          menuToggle.addEventListener("click", function (e) {
+            e.stopPropagation();
+            this.classList.toggle("active");
+            navLinks.classList.toggle("active");
+            const logoImg = document.querySelector(".logo img");
+            if (navLinks.classList.contains("active")) {
+              if (logoImg) logoImg.src = "logo-dark.png";
+            } else {
+              // Restore logo based on scroll position
+              if (logoImg)
+                logoImg.src =
+                  window.scrollY > 50 ? "logo-dark.png" : "logo.png";
+            }
+          });
+        }
+
+        // Close menu when clicking a link
+        navItems.forEach((item) => {
+          item.addEventListener("click", function () {
+            menuToggle.classList.remove("active");
+            navLinks.classList.remove("active");
+            const logoImg = document.querySelector(".logo img");
+            if (logoImg)
+              logoImg.src = window.scrollY > 50 ? "logo-dark.png" : "logo.png";
+          });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener("click", function (e) {
+          if (
+            navLinks.classList.contains("active") &&
+            !navLinks.contains(e.target) &&
+            !menuToggle.contains(e.target)
+          ) {
+            menuToggle.classList.remove("active");
+            navLinks.classList.remove("active");
+            const logoImg = document.querySelector(".logo img");
+            if (logoImg)
+              logoImg.src = window.scrollY > 50 ? "logo-dark.png" : "logo.png";
+          }
+        });
+
+        // Prevent clicks inside menu from closing it
+        navLinks.addEventListener("click", function (e) {
+          e.stopPropagation();
+        });
+      });
+
+      // Smooth scroll to project details
+      function scrollToProject(projectId) {
+        const projectSection = document.getElementById(projectId);
+        const navbarHeight = document.querySelector(".navbar").offsetHeight;
+        const projectPosition = projectSection.offsetTop - navbarHeight;
+
+        window.scrollTo({
+          top: projectPosition,
+          behavior: "smooth",
+        });
+      }
+
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          var form = e.target;
+          var formData = new FormData(form);
+          var messageDiv = document.getElementById("formMessage");
+
+          // Get values and trim spaces
+          var name = form.name.value.trim();
+          var email = form.email.value.trim();
+          var phone = form.phone.value.trim();
+          var message = form.message.value.trim();
+
+          // Validate all fields
+          if (!name) {
+            messageDiv.textContent = "الاسم مطلوب.";
+            return;
+          }
+          if (!email) {
+            messageDiv.textContent = "البريد الإلكتروني مطلوب.";
+            return;
+          }
+          if (!phone) {
+            messageDiv.textContent = "رقم الهاتف مطلوب.";
+            return;
+          }
+          if (phone.length < 11) {
+            messageDiv.textContent =
+              "رقم الهاتف يجب أن يكون 11 رقمًا على الأقل.";
+            return;
+          }
+          if (!message) {
+            messageDiv.textContent = "الرسالة مطلوبة.";
+            return;
+          }
+
+          messageDiv.textContent = "...جاري الإرسال";
+
+          fetch("sendmail.php", {
+            method: "POST",
+            body: formData,
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              if (data.status === "success") {
+                window.location.href = "thanks.html";
+              } else {
+                messageDiv.textContent = data.message;
+              }
+            })
+            .catch((error) => {
+              messageDiv.textContent =
+                "حدث خطأ أثناء إرسال الرسالة. حاول مرة أخرى.";
+            });
+        });
+    </script>
+  </body>
+</html>
